@@ -58,7 +58,7 @@ public class GameActivity extends AppCompatActivity implements OnClickListener {
         } else {
             //no saved data on record
             mScore = 0;
-            mNumQuestions = 4;
+            mNumQuestions = 5;
         }
         mEnableTouchEvents = true;
 
@@ -112,12 +112,12 @@ public class GameActivity extends AppCompatActivity implements OnClickListener {
         int userAnswer = (int) v.getTag();
         if (userAnswer == mCurrentQuestion.getAnswerIndex()) {
             //user answer is correct
-            Toast.makeText(GameActivity.this, "Good job! That's correct",
+            Toast.makeText(GameActivity.this, "Good work",
                     Toast.LENGTH_SHORT).show();
             mScore++;
         } else {
             // incorrect answer
-            Toast.makeText(GameActivity.this, "Oops! Wrong answer!",
+            Toast.makeText(GameActivity.this, "R.I.P.",
                     Toast.LENGTH_SHORT).show();
         }
         mEnableTouchEvents = false;
@@ -140,80 +140,128 @@ public class GameActivity extends AppCompatActivity implements OnClickListener {
 
     //provide the questions and choice list for each question
     public QuestionBank generateQuestions() {
-        Question question1 = new Question("T'Challa is the king of Wakanda. " +
-                "What was the previous king, T'Challa's father, called?",
-                Arrays.asList("Azzuir the Wise", "S'Yan", "T'Chaka", "T'Challa the First"),
+        Question question1 = new Question(
+                "What is the name of the man Carl helped",
+                Arrays.asList(
+                        "Siddiq",
+                        "Zeriff",
+                        "Jackie",
+                        "Astrid"),
+                0);
+
+        Question question2 = new Question(
+                "How did Daryl's brother, Merle Dixon, die?",
+                Arrays.asList("He was killed by Negan",
+                        "Death by walker",
+                        "The governor killed him",
+                        "He killed himself"), 2);
+
+        Question question3 = new Question("What was the first community Rick and " +
+                "his group stayed at?",
+                Arrays.asList(
+                        "Alexandria",
+                        "The Hilltop",
+                        "The Kingdom",
+                        "The Prison"),
+                0);
+
+        Question question4 = new Question("How did Carl die?",
+                Arrays .asList(
+                        "Negan Smashed His Head",
+                        "Simon Shot Him",
+                        "He Was Bitten",
+                        "Douglas Killed Him In Alexandria"),
                 2);
 
-        Question question2 = new Question("Wakanda is so technologically advanced" +
-                " because of vibranium. BUT, how did it get all of the precious metal?",
-                Arrays.asList("It hit Wakanda in the form of an asteroid",
-                        "It was created by an ancient form of magic",
-                        "It was made by a mountain growing around an Infinity Stone",
-                        "It was sent back in time by a future Black Panther"), 0);
+        Question question5 = new Question("When did Carl learn to use a gun?" ,
+                Arrays.asList(
+                        "1 year old",
+                        "5 years old",
+                        "7 years old",
+                        "13 years old"), 2);
 
-        Question question3 = new Question("Where was Erik Killmonger - or N'Jadaka - " +
-                "brought up as a child?",
-                Arrays.asList("Paris", "California", "Wakanda", "Singapore"), 1);
+        Question question6 = new Question("What is Carl's sister's name?",
+                Arrays.asList(
+                        "Judith",
+                        "Jamie",
+                        "Harley",
+                        "Andrea"), 0);
 
-        Question question4 = new Question("What is the name of the elite all-women" +
-                " bodyguard squad commanded by Okoye?", Arrays.asList("Panther Squad",
-                "The Dora Milaje", "Silver Arrows", "Wusa Crew"), 1);
+        Question question7 = new Question("How did Rick overpower Negan?",
+                Arrays.asList(
+                        "By killing him",
+                        "By slitting his throat",
+                        "By throwing him to walkers",
+                        "By shooting him"),
+                                            1);
 
-        Question question5 = new Question("What advice does Okoye give to T'Challa " +
-                "before he jumps out of the Royal Talon Flyer at the start of the movie?",
-                Arrays.asList("Don't freeze", "Don't get seen", "Make Wakanda proud",
-                        "Fighty fighty punch punch"), 0);
+        Question question8 = new Question("How did Henry die?",
+                Arrays.asList(
+                        "He was eaten by Walkers",
+                        "He was shot",
+                        "His head was cut off",
+                        "He was killed by the Saviours"),
+                                            2);
 
-        Question question6 = new Question("What name does Shuri give to her new," +
-                " silent type of footwear that she gives to T'Challa?",
-                Arrays.asList("Hush Panthers", "Contraverse Soles", "Sneakers",
-                        "Panther Pads"), 2);
+        Question question9 = new Question("How did Glen meet Maggie?",
+                Arrays.asList(
+                        "When Rick and his group went to Hershel's",
+                        "They were together since the Apocalypse started",
+                        "They are siblings",
+                        "Glen almost killed her"),
+                                            0);
 
-        Question question7 = new Question("What is the name of the legendary first" +
-                " Black Panther, who united the 5 tribes of Wakanda?",
-                Arrays.asList("Bashenga", "T'Challa", "Keith", "Zuri"), 1);
+        Question question10 = new Question(
+                "What is the name of the newest human threat to Rick and his group?",
+                Arrays.asList(
+                        "Crusaders Of The Night",
+                        "The Vigilantes",
+                        "The Whisperers",
+                        "The Blaze"),
+                                            2);
 
-        Question question8 = new Question("What organization does Everett" +
-                " Ross, T'Challa's reluctant ally, work for during the movie?",
-                Arrays.asList("Joint Counter Fighting Task Force", "SHIELD",
-                        "The CIA", "S.W.O.R.D."), 2);
+        Question question11 = new Question("What was the first place Rick ran into a " +
+                "Walker horde? ",
+                Arrays.asList(
+                        "Atlanta",
+                        "On the freeway",
+                        "In Alexandria",
+                        "With Morgan"),
+                                            0);
 
-        Question question9 = new Question("Who is the other superhero, who first " +
-                "appeared in Captain America: The First Avenger, " +
-                "who appears in the post-credits sequence of Black Panther?",
-                Arrays.asList("Captain America", "Dum Dum Dugan", "Lady Sif",
-                        "Bucky Barnes"), 3);
+        Question question12 = new Question("What was the name of Carol's daughter " +
+                "in the first season?",
+                Arrays.asList(
+                        "Jackie",
+                        "Sophie",
+                        "Sophia",
+                        "Lizzie"),
+                                            2);
 
-        Question question10 = new Question("What is Shuri's relationship with T'Challa?",
-                Arrays.asList("She's his older sister", "She's his aunt",
-                        "She's his childhood friend", "She's his younger sister"),3);
+        Question question13 = new Question("What were Carl's last words?",
+                Arrays.asList(
+                        "I'm not crying, You're crying.",
+                        "Now I can join Mom",
+                        "Don't be mad",
+                        "This is your fault"),
+                                            0);
 
-        Question question11 = new Question("What is the name of the special type of" +
-                " beads worn by Wakandans, that can do everything from make calls to healing" +
-                " people?", Arrays.asList("Cull Obsidian", "Jaguar Habit", "Kimoyo Beads",
-                        "Spin Balls"), 2);
+        Question question14 = new Question("How did Carl first get shot?",
+                Arrays.asList(
+                        "Shane shot him",
+                        "He was watching a deer and Otis shot him",
+                        "He shot himself learning to shoot a gun",
+                        "He was only shot as a walker"),
+                                            1);
 
-        Question question12 = new Question("What animal does W'Kabi ride into battle at" +
-                " the end of the movie?",
-                Arrays.asList("A hippo", "An ostrich", "A rhino", "A little puppy"), 2);
-
-        Question question13 = new Question("Ulysses Klaue is one of the film's bad" +
-                " guys. Which other Marvel movie did he appear in?",
-                Arrays.asList("Captain America: The Winter Soldier",
-                        "Marvel's Agents of SHIELD", "Avengers: Age of Ultron",
-                        "Big Poppa Chuckles: The Fourth Avenger"), 2);
-
-        Question question14 = new Question("Vibranium is the source of Wakanda's " +
-                "technology and it's also what Captain America's shield is made out of! " +
-                "What makes it special?",Arrays.asList("It can shoot electricity",
-                "It's super magnetic", "It's super sparkly", "It absorbs all the energy from hits"),
-                3);
-
-        Question question15 = new Question("In the final big battle during Black Panther," +
-                " what weapon does Shuri use?",
-                Arrays.asList("An energy staff", "Vibranium gauntlets",
-                        "She pilots a Royal Talon Flyer", "Big sword"), 1);
+        Question question15 = new Question("Why was Ezekiel discouraged aft" +
+                "er he returned from his journey ",
+                Arrays.asList(
+                        "He was reminded of his past",
+                        "Jerry died",
+                        "Carol died",
+                        "Because he was ambushed"),
+                                            3);
         return new QuestionBank(Arrays.asList(question1, question2, question3, question4,
                 question5, question6, question7, question8, question9, question10, question11,
                 question12, question13, question14, question15));
@@ -222,7 +270,7 @@ public class GameActivity extends AppCompatActivity implements OnClickListener {
     //endGame implementation ,save score to shared pref and display final score to user
     private void endGame() {
         new AlertDialog.Builder(this)
-                .setTitle("Well done")
+                .setTitle("Keep it up, you survived another year")
                 .setMessage("Your score: " + mScore)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override

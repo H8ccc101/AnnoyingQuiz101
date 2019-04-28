@@ -7,7 +7,8 @@
 
     <TextView
         android:id="@+id/activity_game_question_text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@android:color/white"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="5dp"
@@ -15,9 +16,9 @@
         android:layout_marginBottom="5dp"
         android:layout_weight="2"
         android:gravity="center"
-        android:text="Question?"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
+        android:text="What was the name of the person Carl tried helping?"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
         android:textStyle="bold" />
 
     <Button
@@ -27,9 +28,9 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:background="@android:color/white"
-        android:text="Answer1"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        android:text="Siddiq"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/activity_game_answer2_btn"
@@ -38,9 +39,9 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:background="@android:color/white"
-        android:text="Answer2"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        android:text="Zerrif"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/activity_game_answer3_btn"
@@ -49,9 +50,9 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:background="@android:color/white"
-        android:text="Answer3"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        android:text="Jackie"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/activity_game_answer4_btn"
@@ -60,8 +61,8 @@
         android:layout_margin="5dp"
         android:layout_weight="1"
         android:background="@android:color/white"
-        android:text="Answer4"
-        android:textColor="@color/colorAccent"
-        android:textSize="20sp" />
+        android:text="Astrid"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
 
 </LinearLayout>

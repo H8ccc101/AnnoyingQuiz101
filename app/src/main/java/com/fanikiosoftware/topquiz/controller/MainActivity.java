@@ -18,7 +18,6 @@ import com.fanikiosoftware.topquiz.model.User;
 import static java.lang.System.out;
 
 public class MainActivity extends AppCompatActivity {
-
     private static final int GAME_ACTIVITY_REQUEST_CODE = 22;
     public static final String PREF_KEY_CURRENT_NAME = "PREFERENCE_KEY_CURRENT_NAME";
     public static final String PREF_KEY_NAME1 = "PREFERENCE_KEY_NAME1";
@@ -48,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         mNameInput = findViewById(R.id.activity_main_name_input);
         mGreetingText = findViewById(R.id.activity_main_greeting_txt);
         mPlayButton = findViewById(R.id.activity_main_play_btn);
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     //confirm whether or not game has been played before and greet user accordingly
     private void checkNewUser() {
         String name = mPreferences.getString(PREF_KEY_CURRENT_NAME, null);
@@ -116,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
             mPlayButton.setEnabled(true);
         }
     }
+
     // method called upon return from Game Activity
     //score saved and leaderboard ranked and saved to shared preferences
     @Override
@@ -136,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
         tryAgain = String.format(tryAgain, mPreferences.getString(PREF_KEY_CURRENT_NAME, null));
         mGreetingText.setText(tryAgain);
     }
+
     //get saved scores from shared preferences
     private void getSavedScores() {
         score1 = mPreferences.getInt(PREF_KEY_SCORE1, -1);
@@ -154,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
     //sort scores by score descending
     private void sortScores() {
         currentScore = mPreferences.getInt(PREF_KEY_SCORE, -1);
-        currentName = mPreferences.getString(PREF_KEY_CURRENT_NAME,"");
+        currentName = mPreferences.getString(PREF_KEY_CURRENT_NAME, "");
         if (currentScore > score5) {
             score5 = currentScore;
             name5 = currentName;
@@ -191,6 +195,7 @@ public class MainActivity extends AppCompatActivity {
                 String.valueOf(score5), name5
         };
     }
+
     //save scores in order by score -descending
     private void saveLeaderBoard() {
         mPreferences.edit().putString(PREF_KEY_NAME1, name1).apply();

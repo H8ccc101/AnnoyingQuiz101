@@ -51,7 +51,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="79" />
+                                                <entry key="scalingPercent" value="88" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -61,7 +61,12 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="foregroundImage" value="C:\Users\fanik\Downloads\ic_launcher (1)\web_hi_res_512.png" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="598096" />
+                                      <entry key="backgroundLayerName" value="op_logo_2" />
+                                      <entry key="foregroundImage" value="C:\Users\ManiacalSavage\Desktop\crossed_revolvers.png" />
+                                      <entry key="foregroundLayerName" value="op_logo" />
+                                      <entry key="outputName" value="k" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -83,6 +88,24 @@
                                           </PersistentState>
                                         </value>
                                       </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="iconShape" value="NONE" />
+                                      <entry key="imageAsset" value="C:\Users\ManiacalSavage\Desktop\The Walking Dead.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

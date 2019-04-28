@@ -13,7 +13,7 @@
         android:padding="20dp"
         android:text="@string/tv_leader_board_title"
         android:textAllCaps="true"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         android:typeface="normal" />
@@ -26,7 +26,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="60dp"
         android:padding="1dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="normal" />
@@ -39,7 +39,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="15dp"
         android:padding="1dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="normal" />
@@ -52,7 +52,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="15dp"
         android:padding="1dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="normal" />
@@ -65,7 +65,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="15dp"
         android:padding="1dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="normal" />
@@ -78,7 +78,7 @@
         android:layout_marginLeft="150dp"
         android:layout_marginTop="15dp"
         android:padding="1dp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="normal" />
@@ -94,7 +94,7 @@
         android:layout_weight="1"
         android:background="@android:color/white"
         android:text="@string/leaders_by_name"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/black"
         android:textSize="20sp" />
 
     <Button
@@ -108,6 +108,6 @@
         android:layout_weight="1"
         android:background="@android:color/white"
         android:text="@string/leaders_by_score"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/black"
         android:textSize="20sp" />
 </LinearLayout>
