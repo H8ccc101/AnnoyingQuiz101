@@ -18,6 +18,7 @@ import com.fanikiosoftware.topquiz.model.User;
 import static java.lang.System.out;
 
 public class MainActivity extends AppCompatActivity {
+
     private static final int GAME_ACTIVITY_REQUEST_CODE = 22;
     public static final String PREF_KEY_CURRENT_NAME = "PREFERENCE_KEY_CURRENT_NAME";
     public static final String PREF_KEY_NAME1 = "PREFERENCE_KEY_NAME1";
